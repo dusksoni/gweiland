@@ -1,0 +1,67 @@
+/* Logo Slider */
+
+.logo-slider {
+	background-color: white;
+	-webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+	box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+    padding: 100px 150px;
+}
+
+.logo-slider .logo-slide-track {
+	-webkit-animation: logo-scroll 60s linear infinite;
+	animation: logo-scroll 60s linear infinite;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    gap: 5px;
+	width: calc(350px * 7);
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.logo-slider .slide {
+	
+    background: black;
+	width: 350px;
+	padding: 20px;
+}
+
+.sliderDiv {
+	border-radius: 80px 10px 10px 80px;
+	/* width: 350px; */
+    height: 150px;
+	
+}
+
+.image{
+    border-radius: 80px 0px 0px 80px;
+}
+
+
+@-webkit-keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+@keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
